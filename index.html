@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <main>
+      <style>
+        html{height: 100%;}
+        body{margin: 0;font-size: 17px;height: 100%;color:#565353;font-family: Arial, Helvetica, sans-serif; }
+        main{height: 100%;}
+
+        header{ background-color: gray;}
+        header img{cursor: pointer;}
+
+        aside{width: 230px; display: inline-block;overflow: hidden;}
+        aside div:first-child{margin-left: 10px;border-bottom: 0;margin-bottom: 0;}
+        aside div{ padding: 7px;margin: 10px;margin-left:20px;font-size: 18px;cursor: pointer; display: inline-block;width: 170px;border-bottom: 1px solid #dcdcdc;}
+
+        section{display: inline-block;vertical-align: top;width: calc(100% - 255px); height: calc(100% - 57px);background: #f4f8ff;padding: 10px;}
+
+        .breadcrumb{margin:10px 0}
+        .breadcrumb div{display: inline-block;cursor: pointer;margin-right: 10px;padding: 5px;}
+        .breadcrumb div:not(:last-child)::after{content: '>';    position: relative;left: 8px;}
+
+        button{padding: 10px 20px;border-radius: 10px; background: gray;color: white;font-size: 16px;cursor: pointer;border-color: transparent;}
+        h1{font-size: 30px;font-weight: normal;margin: 20px 0;}
+
+        .tabs{}
+        .tabs > div{ display: inline-block;padding: 8px 15px;cursor: pointer;border: 1px solid transparent;}
+        .tabs > .selected{ background: white;border: 1px solid #a1a8b3;}
+
+        .table{margin-top: 20px;}
+        .row{margin-bottom: 3px;}
+        .row > div{display: inline-block;padding: 7px;}
+        .row:first-child{font-weight: bold;}
+        .row:nth-child(even){background-color: white;}
+        .row > div:first-child{width: 110px;}
+        .row > div:nth-child(2){width: 180px;}
+        .row > div:nth-child(3){width: 180px;}
+        .row > div:nth-child(4){    width: 100px;cursor: pointer;text-align: center;color: white;background: #3592a9;font-size: 14px;vertical-align: bottom;border-radius:10px;}
+      </style>
+      <header>
+        <img src="wmca.png">
+      </header>
+      <aside>
+        <div>Direct Debit</div>
+        <div>Account</div>
+        <div>Details Update</div>
+        <div>Refunds</div>
+        <div>Remobilisation</div>
+      </aside>
+      <section>
+        <div class="breadcrumb">
+          <div>Admin portal</div>
+          <div>Direct Debit</div>
+          <div>Refund</div>
+        </div>
+        <button>Exports</button>
+        <h1>Refund</h1>
+        <div class="tabs">
+          <div class="selected">Open</div>
+          <div>Refund Actioned</div>
+          <div>Cancelled</div>
+        </div>
+        <div class="table">
+          <div class="row">
+            <div>Id</div>
+            <div>Firstname</div>
+            <div>Lastname</div>
+          </div>
+          <div class="row">
+            <div>15346</div>
+            <div>Naila</div>
+            <div>Kayani</div>
+            <div>Edit</div>
+          </div>
+          <div class="row">
+            <div>37346</div>
+            <div>James</div>
+            <div>Albrect</div>
+            <div>Edit</div>
+          </div>        
+          <div class="row">
+            <div>86346</div>
+            <div>Lucy</div>
+            <div>Thomas</div>
+            <div>Edit</div>
+          </div>
+          <div class="row">
+            <div>906346</div>
+            <div>Quentin</div>
+            <div>Thomas</div>
+            <div>Edit</div>
+          </div>    
+          <div class="row">
+            <div>277846</div>
+            <div>McName</div>
+            <div>Roger</div>
+            <div>Edit</div>
+          </div>      
+          <div class="row">
+            <div>277846</div>
+            <div>Germaine</div>
+            <div>Grier</div>
+            <div>Edit</div>
+          </div>                    
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
